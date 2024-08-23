@@ -12,7 +12,16 @@ namespace CalculatorTest
             var calculator = new Calculator();
             var result = calculator.Add("");
 
-            result.Should().Be(0); 
+            result.Should().Be(0);
         }
-   }
+
+        [Fact]
+        public void Calculator_OneNumber_ReturnInt()
+        {
+            var calculator = new Calculator();
+            var result = calculator.Add("10");
+
+            result.Should().Be(10);
+        }
+    }
 }
