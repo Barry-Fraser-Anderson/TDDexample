@@ -10,11 +10,16 @@
             if (commaPos == -1)
                 return int.Parse(value);
 
-            string[] numbers = value.Split(',');
+            string[] lines = value.Split('\n');
+
             int total = 0;
-            foreach (string number in numbers)
+            foreach (string line in lines)
             {
-                total += int.Parse(number);
+                string[] numbers = line.Split(',');
+                foreach (string number in numbers)
+                {
+                    total += int.Parse(number);
+                }
             }
 
             return total;
