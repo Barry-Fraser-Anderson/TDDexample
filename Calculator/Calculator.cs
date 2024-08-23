@@ -6,7 +6,7 @@
         {
             if (string.IsNullOrEmpty(value)) return 0;
 
-            throw new NotImplementedException();
+            return int.Parse(value);
         }
     }
 }
