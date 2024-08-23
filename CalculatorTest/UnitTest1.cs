@@ -23,5 +23,14 @@ namespace CalculatorTest
 
             result.Should().Be(10);
         }
+
+        [Fact]
+        public void Calculator_TwoNumber_ReturnInt()
+        {
+            var calculator = new Calculator();
+            var result = calculator.Add("12,13");
+
+            result.Should().Be(25);
+        }
     }
 }
