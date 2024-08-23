@@ -10,10 +10,14 @@
             if (commaPos == -1)
                 return int.Parse(value);
 
-            string num1 = value.Substring(0, commaPos);
-            string num2 = value.Substring(commaPos + 1);
+            string[] numbers = value.Split(',');
+            int total = 0;
+            foreach (string number in numbers)
+            {
+                total += int.Parse(number);
+            }
 
-            return int.Parse(num1) + int.Parse(num2);
+            return total;
         }
     }
 }
