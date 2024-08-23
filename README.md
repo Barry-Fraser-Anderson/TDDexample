@@ -32,3 +32,5 @@ Steps
 8. Allow multiple delimiters, using this syntax: "//[|][%]\n1|2%3" returns 6.
 9. Handle multiple delimiters of any length.
 ```
+
+I found these instructions to be a bit vague in places. However, it was just an exercise so I just implemented whatever I thought was a reasonable interpretation.
