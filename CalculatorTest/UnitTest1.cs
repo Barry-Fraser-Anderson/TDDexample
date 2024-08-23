@@ -32,5 +32,14 @@ namespace CalculatorTest
 
             result.Should().Be(25);
         }
+
+        [Fact]
+        public void Calculator_MultipleNumber_ReturnInt()
+        {
+            var calculator = new Calculator();
+            var result = calculator.Add("1,2,3,4,5,6,7,8,9,100");
+
+            result.Should().Be(145);
+        }
     }
 }
