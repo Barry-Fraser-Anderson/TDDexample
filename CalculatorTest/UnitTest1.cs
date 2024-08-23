@@ -1,5 +1,6 @@
 using FluentAssertions;
 using System.ComponentModel;
+using Domain;
 
 namespace CalculatorTest
 {
@@ -8,14 +9,10 @@ namespace CalculatorTest
         [Fact]
         public void Calculator_EmptyString_ReturnZero()
         {
-            var result = Add("");
+            var calculator = new Calculator();
+            var result = calculator.Add("");
 
             result.Should().Be(0); 
         }
-
-        int Add(string value)
-        {
-            throw new NotImplementedException();
-        }
-    }
+   }
 }
