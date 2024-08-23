@@ -58,5 +58,15 @@ namespace CalculatorTest
 
             result.Should().Be(145);
         }
+        [Fact]
+
+        public void Calculator_Negative_ThrowsException()
+        {
+            var calculator = new Calculator();
+            Action action1 = () => calculator.Add("-1,2");
+            action1.Should().Throw<Exception>().WithMessage("Negatives not allowed: -1");
+            Action action2 = () => calculator.Add("2,-4,3,-5");
+            action2.Should().Throw<Exception>().WithMessage("Negatives not allowed: -4,-5");
+        }
     }
 }
