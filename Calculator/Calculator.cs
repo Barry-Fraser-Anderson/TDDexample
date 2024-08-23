@@ -15,15 +15,29 @@
                 lines[0] = "0";
             }
 
+            var negatives = new List<int>();
             int total = 0;
             foreach (string line in lines)
             {
                 string[] numbers = line.Split(delim);
                 foreach (string number in numbers)
                 {
-                    total += int.Parse(number);
+                    int val = int.Parse(number);
+                    if (val < 0) 
+                    {
+                        negatives.Add(val);
+                        continue;
+                    }
+                    total += val;
                 }
             }
+
+            if (negatives.Count > 0)
+            {
+                string negs = string.Join(",", negatives);
+                throw new Exception($"Negatives not allowed: {negs}");
+            }
+
 
             return total;
         }
