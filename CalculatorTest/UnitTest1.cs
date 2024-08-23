@@ -41,5 +41,14 @@ namespace CalculatorTest
 
             result.Should().Be(145);
         }
+
+        [Fact]
+        public void Calculator_NewLines_ReturnInt()
+        {
+            var calculator = new Calculator();
+            var result = calculator.Add("1\n2,3,4,5,6\n7,8,9,100");
+
+            result.Should().Be(145);
+        }
     }
 }
