@@ -28,6 +28,10 @@
                         negatives.Add(val);
                         continue;
                     }
+                    if (val > 1000)
+                    {
+                        continue;
+                    }
                     total += val;
                 }
             }
