@@ -50,6 +50,7 @@ namespace CalculatorTest
 
             result.Should().Be(145);
         }
+
         [Fact]
         public void Calculator_NewDelim_ReturnInt()
         {
@@ -67,6 +68,15 @@ namespace CalculatorTest
             action1.Should().Throw<Exception>().WithMessage("Negatives not allowed: -1");
             Action action2 = () => calculator.Add("2,-4,3,-5");
             action2.Should().Throw<Exception>().WithMessage("Negatives not allowed: -4,-5");
+        }
+        
+        [Fact]
+        public void Calculator_Over1000_Ignored()
+        {
+            var calculator = new Calculator();
+            var result = calculator.Add("1001,2");
+
+            result.Should().Be(2);
         }
     }
 }
