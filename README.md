@@ -1,11 +1,15 @@
 # TDDexample
 
-This is an exercise in using TDD
+This is an exercise in performing TDD in C# with xUnit and FluentAssertions.
 
 ## Instructions
 
 ```text
-This C# code kata is designed to help you learn test-first coding and refactoring. To that end, try not to read ahead or guess what the next requirements might be. Work incrementally, and complete as many steps as you can in a 30 minute period. Continue trying the kata from scratch, until you can complete it entirely within 30 minutes.
+This C# code kata is designed to help you learn test-first coding and refactoring.
+To that end, try not to read ahead or guess what the next requirements might be.
+Work incrementally, and complete as many steps as you can in a 30 minute period.
+Continue trying the kata from scratch, until you can complete it entirely within 30 minutes.
+
 Steps
 
 1. Create a StringCalculator with a method Add(string numbers) that returns an integer.
@@ -33,4 +37,5 @@ Steps
 9. Handle multiple delimiters of any length.
 ```
 
-I found these instructions to be a bit vague in places. However, it was just an exercise so I just implemented whatever I thought was a reasonable interpretation.
+I found these instructions to be a bit unclear in places. 
+However, I just intended it to be a learning exercise so I implemented whatever I thought was a reasonable interpretation; neither did I make further attempts to complete it in 30 minutes.
