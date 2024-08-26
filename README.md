@@ -1,6 +1,13 @@
 # TDDexample
 
-This is an exercise in performing TDD in C# with xUnit and FluentAssertions.
+An exercise in performing TDD in C# with xUnit and FluentAssertions.
+
+## Screenshots
+
+<div>
+   <img src="https://github.com/user-attachments/assets/e5980b13-d7fe-459b-9e73-71858392a4de" alt="Unit Tests sample" width="400px">
+   <img src="https://github.com/user-attachments/assets/02f75b1d-5490-4a4b-86b0-ffefc6c71c5b" alt="Solution sample" width="400px">
+</div>
 
 ## Instructions
 
